@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Pinterest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="pinterest.png">
+	
+	<!-- main.css -->
+	<link href="main.css" rel="stylesheet">
+	
+</head>
+<body>
+	<div id="columns">
+	<!-- aquí van las imágenes -->
+	</div>
+
+<!--JQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<!--Json -->
+<script type="text/javascript" src="json.js"></script>
+<!--Js mio -->
+<script src="main.js"></script>
+<!--Js llamada de plugin -->
+<script type="text/javascript">
+
+		$(document).ready(function()
+		{
+			$('#columns').pinterestPlugin(
+				imagejson
+			);
+		});
+</script>
+</body>
+</html>
